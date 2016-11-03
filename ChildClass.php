@@ -17,7 +17,7 @@
     public function __toString() {
       $oldStory = parent::__toString();
       $rescue = "</br> Thankfully, " . $this->n2 . " came to the rescue.";
-      $end = "</br> But " . $this->n . " never went to the drive-in ever again.";
+      $end = "</br> But " . parent::callN() . " never went to the drive-in ever again.";
 
       return $oldStory . $rescue . $end;
     }

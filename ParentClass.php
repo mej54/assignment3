@@ -2,12 +2,13 @@
 	// This is the file for the parent class
 
 	class ParentClass {
-    private $name1;
-    private $object1;
-    private $action1;
-    private $adjective1;
-    private $emotion;
-    private $adjective2;
+    private $n;
+    private $o1;
+    private $a;
+    private $ad1;
+    private $emo;
+    private $ad2;
+    public $instance;
 
     public function __construct($name1, $object1, $action1, $adjective1, $emotion, $adjective2) {
       $this->n = $name1;
@@ -16,6 +17,14 @@
       $this->ad1 = $adjective1;
       $this->emo = $emotion;
       $this->adj2 = $adjective2;
+    }
+
+    public function changeAction($newAction) {
+      $this->a = $newAction;
+    }
+
+    public function callN() {
+      return $this->n;
     }
 
     public function __toString() {

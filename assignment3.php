@@ -17,7 +17,7 @@
 <body>
   <h1> Spooky Halloween Madlib </h1>
 
-  <div><img id="jackolantern" src="images/pumpkinimg.jpg" alt="pumpkin" height=200 width=260/></div>
+  <div><img id="jackolantern" src="./images/pumpkinimg.jpg" alt="pumpkin" height=200 width=260/></div>
   </br>
 
   <section id="one">
@@ -27,6 +27,8 @@
     ?>
   </section>
 
+  <?php $origStory = clone $firstStory; ?>
+
   </br>
   <h3> Bob woke up from his nightmare... and called up his friend Fred to go see a movie... </h3>
   </br>
@@ -35,9 +37,18 @@
     <?php 
       $secondStory = new ChildClass("Bob","Fred","tree","ran","hairy","terrified","melting");
       $secondStory->scaryChange();
+      $secondStory->changeAction("scootered");
       echo $secondStory;
     ?>
   </section> 
+
+  <br/>
+  <h3> But Bob couldn't stop thinking about that original dream... </h3>
+  <br/>
+
+  <section id="orig">
+    <?php echo $origStory; ?>
+  </section>
 	
 </body>
 </html>
