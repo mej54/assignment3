@@ -17,7 +17,7 @@
 <body>
   <h1> Spooky Halloween Madlib </h1>
 
-  <div><img id="jackolantern" src="./images/pumpkinimg.jpg" alt="pumpkin" height=200 width=260/></div>
+  <div><img id="jackolantern" src="./images/pumpkin.jpg" alt="pumpkin" height=200 width=260/></div>
   </br>
 
   <section id="one">
