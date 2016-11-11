@@ -1,7 +1,6 @@
 <?php
 	// This is the file for the parent class
-
-	class ParentClass {
+  class ParentClass {
     private $n;
     private $o1;
     private $a;
@@ -35,4 +34,4 @@
     
       return $movie . "</br>" . $about . "</br>" .  $event . "</br>" . $result;
     }
-	}
+  }
